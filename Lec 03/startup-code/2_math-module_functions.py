@@ -12,7 +12,7 @@ from math import sqrt, trunc, radians, degrees, sin, exp, log
 #square_root_value = 
 
 # Round off error
-# Calculate and print the square of square-root of 2
+# Calculate and print the square of the square-root of 2
 
 
 # Use exponential operator and square root function to caluclate
@@ -31,7 +31,7 @@ from math import sqrt, trunc, radians, degrees, sin, exp, log
 #radian_value =
 
 # Converting radians to degrees
-#myRad = 0.525
+#myRad = pi/4
 #degree_value =
 
 # sin, cos, and tan values of 30 degrees
