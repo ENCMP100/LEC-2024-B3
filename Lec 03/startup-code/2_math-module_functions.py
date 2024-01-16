@@ -42,7 +42,7 @@ from math import sqrt, trunc, radians, degrees, sin, exp, log
 #tan_value = 
 
 
-# Exponent to the exponent (e.g. e to-the x)
+# Exponent to the euler number or the base of natural logerithm (e.g. e to-the x)
 #n = 3
 #e_to_the_3 =
 
