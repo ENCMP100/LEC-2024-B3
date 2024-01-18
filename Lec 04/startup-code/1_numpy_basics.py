@@ -14,7 +14,6 @@ Created on Wed Jan 11 16:17:37 2023
 
 
 import numpy as np
-import numpy.random as rand
 
 # array
 # ===== 
