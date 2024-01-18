@@ -35,10 +35,10 @@ array_2 = np.array(list_2)
 a1 = np.arange(0, 11)
 
 # Creating a range from -5 to 5, inclusive
-a2 = np.arange(-5,6)
+##a2 = np.arange(-5,6)
 
 # Creating a range from -5 to 5, inclusive, in steps of 0.5 increments
-a3 = np.arange(-5,5.1, 0.5)
+##a3 = np.arange(-5,5.1, 0.5)
 
 
 # zeros
@@ -50,11 +50,11 @@ a3 = np.arange(-5,5.1, 0.5)
 v1 = np.zeros(10)
 
 # Creating a 4x3 matrix of zeros
-m1 = np.zeros((4,3))
-#print('m1:\n', m1) 
+##m1 = np.zeros((4,3))
+##print('m1:\n', m1) 
 
 # Finding the shape of m1
-print('m1 shape:', m1.shape)
+##print('m1 shape:', m1.shape)
 
 # full
 # ====
@@ -63,10 +63,10 @@ print('m1 shape:', m1.shape)
 
 # creating a five-element array filled with number 3
 v5 = np.full(5, 3)
-print('v5:\n', v5)
+##print('v5:\n', v5)
 
 # Creating a 4x3 array (or matrix) that is full of value 8
-m2 = np.full((4,3), 8)
-print('m2:\n', m2)
+##m2 = np.full((4,3), 8)
+##print('m2:\n', m2)
 
 

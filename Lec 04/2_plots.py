@@ -7,8 +7,6 @@ Created on Wed Jan 11 19:32:41 2023
 import numpy as np
 import matplotlib.pyplot as plt
 
-from matplotlib import style
-
 
 # Calculating a projectile motion under gravity
 
@@ -42,15 +40,15 @@ h = u * np.sin(np.radians(theta)) * t - (1/2) * g * t ** 2
 plt.plot(t, h, color="r", label="height")
 
 # Set the x-axis label
-plt.xlabel('Time')
+##plt.xlabel('Time')
 
 # Set the y-axis label
-plt.ylabel('Height')
+##plt.ylabel('Height')
 
 # Turn the grid on and set the grid-lines color to cyan
-plt.grid(visible = True, color="c")
+##plt.grid(visible = True, color="c")
 
 # Display the legend
-plt.legend()
+##plt.legend()
 
 
