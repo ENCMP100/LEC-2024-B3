@@ -1,17 +1,21 @@
 """
-Created on Sun Jan  8 18:56:01 2023
-
 Run the program and review values in the Variable Explorer in Spyder
 
 @author: ranaweer
 """
 
-from math import *
-#import math as math
+
+from math import sqrt, trunc, radians, degrees, sin, cos, tan, exp, log, pi
 
 # Square Root of a number
 x1 = 25
 square_root_value = sqrt(x1)
+
+# Round off error
+# Calculate and print the square of the square-root of 2
+sqrt_2 = sqrt(2)
+square_sqrt_2 = sqrt_2 * sqrt_2
+
 
 # Use exponential operator and square root function to caluclate
 # hypotenuse of a right-angle triangle
@@ -29,18 +33,19 @@ myDeg = 30
 radian_value = radians(myDeg)
 
 # Converting radians to degrees
-myRad = 0.525
+myRad = pi/4
 degree_value = degrees(myRad)
 
 # sin, cos, and tan values of 30 degrees
 angleInDegrees = 30
 
-sin_value = sin(radians(angleInDegrees))
-cos_value = cos(radians(angleInDegrees))
-tan_value = tan(radians(angleInDegrees))
+deg_val = radians(angleInDegrees)
+sin_value = sin(deg_val)
+cos_value = cos(deg_val)
+tan_value = tan(deg_val)
 
 
-# Exponent to the exponent (e.g. e to-the x)
+# Exponent to the euler number or the base of natural logerithm (e.g. e to-the x)
 n = 3
 e_to_the_3 = exp(n)
 

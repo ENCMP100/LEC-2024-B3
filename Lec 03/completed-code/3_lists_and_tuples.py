@@ -1,6 +1,5 @@
 
 """
-Created on Wed Jan 11 16:17:37 2023
 
 @author: ranaweer
 """
@@ -17,13 +16,26 @@ my_list = [10, 'Hello World!', 200, 12.5]
 my_list2 = [0, 1, 2, 3, 4, 5]
 
 # Create a list that contains integers from -2 to 2
-my_list3 = [-2. -1, 0, 1, 2]
+my_list3 = [-2, -1, 0, 1, 2]
 
 # Modify the first element in the my_list3 to 100
 my_list3[0] = 100
 
+
+# Accessing a section or a range of elements in a list
+x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(x) # print the whole list
+print(x[0]) # just print the first (0th) element
+print(x[0:2])
+print(x[2:5])
+
 # Create an example list of a lists as a two-dimensional
-my_list4 = [[1,2,3], [4, 5, 6]]
+my_list4 = [[1,2,3], [4,5,6]]
+
+
+
+
+
 
 
 # Tuple
@@ -35,5 +47,4 @@ my_tuple = (10, 'Hello World!', 200, 12.5)
 my_tuple2 = (4,2)
 my_tuple3 = (4,)  # Remember the comma. Otherwise, this will be an integer.
 
-# Try to change the first value in my_tuple to 100. 
-# This would generate a syntax error since Tuples are read-only.
+# Try to change the first value in my_tuple to 100
