@@ -45,11 +45,10 @@ while play:
         else:
             activePlayerIndex = index[1]
             opponentIndex = index[0]
-            a = 180 - float(input("Enter the angle for the player facing east: "))
-        
-        
+            a = 180 - float(input("Enter the angle for the player facing west: "))
+                
 
-        v = float(input("Enter the velocity for the player facing east: "))
+        v = float(input("Enter the velocity: "))
 
         # Player 1 throwing a banana
         playerX = stageX[activePlayerIndex]
@@ -60,7 +59,7 @@ while play:
         aRadians = np.radians(a)
     
         x = v *  np.cos(aRadians) * t
-        y= v * np.sin(aRadians) * t - 0.5 * g * t**2
+        y = v * np.sin(aRadians) * t - 0.5 * g * t**2
     
         # shift the origin of the projectile to the 
         # first player's coordinates 

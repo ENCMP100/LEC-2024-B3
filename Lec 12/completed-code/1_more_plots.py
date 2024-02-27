@@ -87,7 +87,7 @@ plt.show()
 # Lee page 75, combined book page 139
 
 rainfall = [17,9,16,3,21,7,8,4,6,21,4,1] 
-months = ['Jan','Feb','Mar','Apr','May','Jun', 'Jul','Aug','Sep','Oct','Nov','Dec']
+months = ['January','Febuary','March','Apr','May','Jun', 'Jul','Aug','Sep','Oct','Nov','Dec']
  
 plt.bar(months, rainfall, align='center', color='blue' )
 plt.xticks(rotation='vertical')
@@ -124,6 +124,7 @@ plt.subplot(224) # 2 rows, 2 columns, 4th plot
 plt.plot(theta, y)
 plt.axis([15, 75, 0.8, 1.2])
 plt.xticks(np.arange(15, 75, 5), rotation = 'vertical')
+plt.yticks(np.arange(0.8, 1.2, 0.05))
 plt.grid(visible=True)
 plt.title('Zoomed with ticks rotated')
 
@@ -131,5 +132,5 @@ plt.title('Zoomed with ticks rotated')
 # NOT in the ENCMP100 syllabus but it is a
 # useful function to ensure subplots are 
 # layed out properly spaced (without overlapping)
-# plt.tight_layout()
+plt.tight_layout()
 
