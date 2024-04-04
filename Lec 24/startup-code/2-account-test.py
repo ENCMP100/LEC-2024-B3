@@ -5,27 +5,27 @@
 
 from BankAccountDefinition import BankAccount
 
-beth_account = BankAccount("Beth")
+bill_account = BankAccount("Bill")
 li_account = BankAccount("Li")
 rose_account = BankAccount("Rose")
 
 # Print account info. Note the incremental account numbers
-beth_account.printInfo()
+bill_account.printInfo()
 li_account.printInfo()
 rose_account.printInfo()
 
 
-beth_account.deposit(1000)
-beth_account.printInfo() # Balance should be 1000
+bill_account.deposit(1000)
+bill_account.printInfo() # Balance should be 1000
 
-beth_account.withdraw(500)
-beth_account.printInfo() # Balance should be 500
+bill_account.withdraw(500)
+bill_account.printInfo() # Balance should be 500
 
-beth_account.withdraw(1500) 
-beth_account.printInfo() # Balance should be -1049.50 with Over Draft fee
+bill_account.withdraw(1500) 
+bill_account.printInfo() # Balance should be -1049.50 with Over Draft fee
 
 # The following statement should raise an insufficient-balance exception
-#beth_account.withdraw(1500)
+#bill_account.withdraw(1500)
 
 
 ## Reference Assignment
@@ -34,27 +34,27 @@ beth_account.printInfo() # Balance should be -1049.50 with Over Draft fee
 #  When you assign such a complex object to another variable, it
 #  will only assign a reference instead of creating a complete clone
 
-fred_account = rose_account # the vriables fred_account points at
-                            # the same object as rose_account.
-                            # Therefore, fred_account is an "alias"
-                            # to rose_account
+william_account = bill_account # the vriables william_account points at
+                               # the same object as bill_account.
+                               # Therefore, william_account is an "alias"
+                               # to bill_account
            
-print("Rose", end=" ")                            
-rose_account.printInfo()
-print("Fred", end=" ")                            
-fred_account.printInfo()
+print("Bill", end=" ")                            
+bill_account.printInfo()
+print("William", end=" ")                            
+william_account.printInfo()
 
-fred_account.deposit(5000)
-print("Rose", end=" ")                            
-rose_account.printInfo()
-print("Fred", end=" ")                            
-fred_account.printInfo()
+william_account.deposit(5000)
+print("Bill", end=" ")                            
+bill_account.printInfo()
+print("William", end=" ")                            
+william_account.printInfo()
 
 ## IS: True when two variables are aliases to the same object
-if fred_account is rose_account:
-    print("fred_account is an alias to rose_account")
+if william_account is bill_account:
+    print("william_account is an alias to bill_account")
 else:
-    print("fred_account is not an alias to rose_account")
+    print("william_account is not an alias to bill_account")
 
 
 ## IS NOT: True when two variables are NOT aliases to the same object
